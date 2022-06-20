@@ -2,8 +2,8 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { darken, rgba } from 'polished';
-import { color, typography } from './shared/styles';
-import { easing } from './shared/animation';
+import { color, typography } from '../shared/styles';
+import { easing } from '../shared/animation';
 
 const Text = styled.span`
   display: inline-block;
@@ -316,7 +316,7 @@ const applyStyle = ButtonWrapper => {
   );
 };
 
-export function Button({
+export function ButtonNew({
   isDisabled,
   isLoading,
   loadingText,
@@ -348,7 +348,7 @@ export function Button({
   );
 }
 
-Button.propTypes = {
+ButtonNew.propTypes = {
   isLoading: PropTypes.bool,
   /**
    When a button is in the loading state you can supply custom text
@@ -373,7 +373,7 @@ Button.propTypes = {
   ButtonWrapper: PropTypes.oneOfType([PropTypes.func, PropTypes.object]),
 };
 
-Button.defaultProps = {
+ButtonNew.defaultProps = {
   isLoading: false,
   loadingText: null,
   isLink: false,
