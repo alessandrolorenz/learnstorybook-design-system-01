@@ -21,6 +21,20 @@ export default {
   },
 };
 
+const Template = args => <Avatar {...args} />;
+
+export const Controls = Template.bind({});
+/*
+ * More on args at:
+ * https://storybook.js.org/docs/react/writing-stories/args
+ */
+Controls.args = {
+  loading: false,
+  size: 'tiny',
+  username: 'Dominic Nguyen',
+  src: 'https://avatars2.githubusercontent.com/u/263385',
+};
+
 export const Standard = (args) => <Avatar {...args} />;
 Standard.args = {
   size: "large",
