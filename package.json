@@ -1,7 +1,7 @@
 {
-  "name": "learnstorybook-design-system-template",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@alessandrolorenz/learnstorybook-design-system",
+  "version": "0.1.1",
+  "private": false,
   "dependencies": {
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
@@ -19,7 +19,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "cross-env BABEL_ENV=production babel src -d dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
@@ -42,7 +42,16 @@
       }
     ]
   },
-  "babel": {},
+  "babel": {
+    "presets": [
+      [
+        "react-app",
+        {
+          "absoluteRuntime": false
+        }
+      ]
+    ]
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -56,6 +65,8 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@storybook/addon-a11y": "^6.5.9",
     "@storybook/addon-actions": "^6.5.9",
     "@storybook/addon-essentials": "^6.5.9",
     "@storybook/addon-interactions": "^6.5.9",
@@ -66,9 +77,16 @@
     "@storybook/preset-create-react-app": "^3.2.0",
     "@storybook/react": "^6.5.9",
     "@storybook/testing-library": "^0.0.13",
+    "auto": "^10.37.1",
     "chromatic": "^6.6.3",
+    "cross-env": "^7.0.3",
     "prettier": "^2.7.1"
   },
   "readme": "ERROR: No README data found!",
-  "_id": "learnstorybook-design-system-template@0.1.0"
+  "_id": "learnstorybook-design-system-template@0.1.0",
+  "description": "Storybook design systems tutorial",
+  "main": "(dist/index.js)",
+  "repository": "https://github.com/alessandrolorenz/learnstorybook-design-system-01.git",
+  "author": "Alessandro Cunha Lorenz <alessandro.lorenz@compasso.com.br>",
+  "license": "MIT"
 }
