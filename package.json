@@ -15,7 +15,8 @@
     "react-scripts": "4.0.3",
     "storybook-addon-themes": "^6.1.0",
     "styled-components": "^5.2.1",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "babel-loader": "8.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
