@@ -2,7 +2,7 @@ import React from "react";
 
 import { Container } from "./styles";
 
-const Box = ({
+const ControlContainer = ({
   children,
   display = "flex",
   direction = "column",
@@ -21,4 +21,4 @@ const Box = ({
   );
 };
 
-export { Box };
+export { ControlContainer };
