@@ -1,26 +1,26 @@
-import { ControlContainer } from './index'
-import docs from './ControlContainer.docs.mdx'
+import { Box } from './index'
+import docs from './Box.docs.mdx'
 
 export default {
-  title: 'Layout/ControlContainer',
-  component: ControlContainer,
+  title: 'Layout/Box',
+  component: Box,
 }
 
 const Template = (args) => (
   //👇 Your template goes here
-  <ControlContainer {...args}>
-    <ControlContainer w="50%" border= '1px solid gray' p='10px' m='5px' bRadius= '10px'>
-      ControlContainer content. It can be anything. ControlContainer is a div to wrap and make componentes
-    </ControlContainer>
-    <ControlContainer w="50%" border= '1px solid gray' p='10px' m='5px' bRadius= '10px'>
-      ControlContainer content. It can be anything. ControlContainer is a div to wrap and make componentes
-    </ControlContainer>
-  </ControlContainer>
+  <Box {...args}>
+    <Box w="50%" border= '1px solid gray' p='10px' m='5px' bRadius= '10px'>
+      Box content. It can be anything. Box is a div to wrap and make componentes
+    </Box>
+    <Box w="50%" border= '1px solid gray' p='10px' m='5px' bRadius= '10px'>
+      Box content. It can be anything. Box is a div to wrap and make componentes
+    </Box>
+  </Box>
 )
 
-export const controlBox = Template.bind({})
+export const Red = Template.bind({})
 
-controlBox.args = {
+Red.args = {
   w: '300px',
   h: 'auto',
   minW: '',
@@ -41,9 +41,9 @@ controlBox.args = {
   my: '',
   p: '',
   pt: '',
-  pr: '10px',
+  pr: '',
   pb: '',
-  pl: '10px',
+  pl: '',
   px: '',
   py: '',
   display: '',
