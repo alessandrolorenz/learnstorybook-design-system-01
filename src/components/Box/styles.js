@@ -1,15 +1,15 @@
 import styled from '@emotion/styled';
-import { FlexBox } from '../../Utils/flexbox';
-import { Typography } from '../../Utils/typography';
-import { Space } from '../../Utils/space';
-import { Position } from '../../Utils/position';
-import { Size } from '../../Utils/size';
-import { BackgroundAndColor } from '../../Utils/background-and-color';
-import { Borders } from '../../Utils/borders';
-import { BorderRadius } from '../../Utils/border-radius';
-import { Shadow } from '../../Utils/shadow';
-import { OtherProps } from '../../Utils/other-props';
-import {color} from '../../../shared/styles'
+import { FlexBox } from '../Utils/flexbox';
+import { Typography } from '../Utils/typography';
+import { Space } from '../Utils/space';
+import { Position } from '../Utils/position';
+import { Size } from '../Utils/size';
+import { BackgroundAndColor } from '../Utils/background-and-color';
+import { Borders } from '../Utils/borders';
+import { BorderRadius } from '../Utils/border-radius';
+import { Shadow } from '../Utils/shadow';
+import { OtherProps } from '../Utils/other-props';
+import {color} from '../../shared/styles'
 
 export const Container = styled.div`
 

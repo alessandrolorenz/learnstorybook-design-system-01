@@ -8,6 +8,7 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "babel-loader": "8.1.0",
     "emotion-theming": "^11.0.0",
     "polished": "^4.1.1",
     "react": "^17.0.1",
@@ -15,8 +16,7 @@
     "react-scripts": "4.0.3",
     "storybook-addon-themes": "^6.1.0",
     "styled-components": "^5.2.1",
-    "web-vitals": "^1.0.1",
-    "babel-loader": "8.1.0"
+    "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -79,7 +79,7 @@
     "@storybook/react": "^6.5.9",
     "@storybook/testing-library": "^0.0.13",
     "auto": "^10.37.1",
-    "chromatic": "^6.6.3",
+    "chromatic": "^11.25.2",
     "cross-env": "^7.0.3",
     "prettier": "^2.7.1"
   },

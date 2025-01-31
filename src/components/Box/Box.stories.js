@@ -1,5 +1,4 @@
 import { Box } from './index'
-import docs from './Box.docs.mdx'
 
 export default {
   title: 'Layout/Box',
